@@ -48,6 +48,22 @@ h3 {
     padding-top: 10px;
     padding-bottom: 0px;
     margin-left: 5%;
+    color: #fd8e49ff;
+
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    grid-column: span 4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #f567a7ff;
 
 }
 
@@ -173,7 +189,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: bold;
-    background-color: rgba(253, 142, 73, 0.6);
+    background-color: rgba(255, 153, 199, 0.6);
     color: white;
 
 }
@@ -204,6 +220,104 @@ h3 {
 .project-weatherapp, .project-chatbotapp, .project-future{
     padding-top: 30px;
 }
+
+/* OTHER PROJECTS */
+.otherproject-container {
+    height: 300px;
+}
+
+.tag-wrapperother {
+    display: flex;
+    margin-left: 5%;
+  }
+
+.tag-wrapperother p {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: bold;
+    height: 15px;
+    background-color: #7ff083ff;
+    text-align: center;
+    font-size: 12px; 
+    line-height: 12px;
+    padding: 4px;
+    margin: 3px;
+    border-radius: 2px;
+    white-space: none;
+}
+
+/* ARTICLES */
+.articles-container {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-content: center;
+    align-content: center;
+}
+
+.article-date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-left: 5%;
+    color: #fd8e49ff;
+}
+
+.article-tittle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-left: 5%;
+    color: black;
+}
+
+.article-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 32px;
+    padding-bottom: 0px;
+    margin-left: 5%;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+ .article-2 {
+    padding-top: 30px;
+ }
+
+ /* ARTICLES */
+.footer-container {
+    display: block;
+    background-color: #f567a7ff;
+    padding: 5px 0 100px 0;
+}
+
+.footer-tittle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-info {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+    color: white;
+    padding-top: 40px;
+}
+
 
 @media (min-width:541px) {
 
@@ -295,7 +409,7 @@ h3 {
 .descriptions {
     padding: 0px;
     margin: 0px; 
-    padding-bottom: 20px;
+    height: 60px;
 }
 
 .tag-wrapper {
@@ -305,6 +419,7 @@ h3 {
     
 }
 
+
 .project-weatherapp {
     padding-top: 0px;
 } 
@@ -312,8 +427,29 @@ h3 {
 .project-chatbotapp, .project-future{
     padding-top: 0px;
 }
+
+.otherproject-container h3 {
+    margin-left: 10%;
 }
 
+.otherproject-container p {
+    margin-left: 10%;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.article-2 {
+    padding-top: 0px;
+}
+}
 
 @media (min-width:1025px) {
 .main__header {
@@ -357,12 +493,14 @@ h3 {
 p {
     font-size: 30px;
     line-height: 50px;
-    padding: 50px 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 50px;
     text-indent: 5%;
 }
 
 .summary-container {
-    height: 340px;
+    height: 350px;
 }
 
 h2 {
@@ -370,8 +508,19 @@ h2 {
     line-height: 50px;
 }
 
+h3 {
+    margin-left: 0px;
+    font-size: 25px;
+    line-height: 41px;
+}
+
+h4 {
+    font-size: 38px;
+    line-height: 47px;
+}
+
 .tech-container {
-    height: 340px;
+    height: 400px;
     padding-top: 60px;
     padding-bottom: 20px;
 }
@@ -379,5 +528,40 @@ h2 {
 .descriptions {
     font-size: 25px;
     line-height: 41px;
+    white-space: wrap;
+    height: 80px;
 }
+
+.tag-wrapper {
+    display: flex;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.tag-wrapper p {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.otherproject-container p {
+    margin-left: 10%;
+    font-size: 17px;
+    line-height: 29px;
+}
+
+.article-date {
+    font-size: 25px;
+    line-height: 41px;
+}
+
+.article-tittle {
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.article-text {
+    font-size: 25px;
+    line-height: 41px;
+}
+
 }
