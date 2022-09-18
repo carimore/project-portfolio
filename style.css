@@ -1,0 +1,189 @@
+.outter-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.main__header {
+    background-image: url("Images/portfolioBackground-mobile.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 60vh;
+    padding: 24px;
+    position: relative;
+}
+
+.profile-image {
+    position: absolute;
+    width: 180px;
+    border: 2px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    bottom: -30px;
+    right: 5%;
+}
+
+.portfolio {
+    position: absolute;
+    left: 10%;
+    top: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.myrole {
+    position: absolute;
+    left: 10%;
+    top: 168px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: bold;
+    color: black;
+    white-space: wrap;
+    width: 150px;
+}
+
+.mybackground {
+    position: absolute;
+    left: 10%;
+    top: 263px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.social-media {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+    color: black;
+    margin: 30px 5%;
+    height: 232px;
+    text-indent: 2%;
+}
+
+@media (min-width:541px) {
+.main__header {
+    background-image: url("Images/portfolioBackground-desktop.png");
+    position: relative;
+    color: white;
+    min-height: 300px;
+    padding: 0px;
+}
+
+.outer-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 30vh;
+}
+
+.profile-image {
+    width: 180px;
+    right: 10%;
+}
+
+.portfolio {
+    font-size: 24x;
+    line-height: 24px;
+    top: 90px;
+    left: 10%;
+}
+
+.myrole {
+    font-size: 40px;
+    line-height: 40px;
+    top: 120px;
+    left: 10%;
+    white-space: wrap;
+    width: 200px;
+}
+
+.mybackground {
+    left: 10%;
+    top: 200px;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.social-media {
+    position: absolute;
+    right: 10%;
+    top: 60px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    margin: 50px 10%;
+    height: 230px;
+    text-indent: 5%;
+}
+
+}
+
+@media (min-width:1025px) {
+.main__header {
+    background-image: url("Images/portfolioBackground-desktop.png");
+    min-height: 600px;
+}
+
+.profile-image {
+    width: 333px;
+    right: 15%;
+}
+
+.portfolio {
+    left: 15%;
+    font-size: 28px;
+    line-height: 37px;
+    top: 200px;
+}
+
+.myrole {
+    left: 15%;
+    top: 240px;
+    font-size: 82px;
+    line-height: 90px;
+    
+}
+
+.mybackground {
+    left: 15%;
+    top: 420px;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.social-media {
+    position: absolute;
+    right: 15%;
+    top: 125px;
+}
+
+p {
+    font-size: 30px;
+    line-height: 50px;
+    color: black;
+    margin: 100px 15%;
+    height: 200px;
+    text-indent: 5%;
+}
+
+}
+
+
