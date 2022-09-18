@@ -1,10 +1,57 @@
 .outter-wrapper {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 auto;
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 200px;
+    text-indent: 2%;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    grid-column: span 4;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+}
+
+mark {
+    background-color: #f567a7ff;
+    color: white;
+    padding: 5px;
+    
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: 1%;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-left: 5%;
+
+}
+
+/* HEADER */
 .main__header {
     background-image: url("Images/portfolioBackground-mobile.png");
     background-size: cover;
@@ -65,17 +112,101 @@
     top: 5%;
 }
 
-p {
-    font-family: 'Montserrat', sans-serif;
+/* SUMMARY */
+.summary-container {
+    padding-top: 20px;
+}
+
+/* TECH */
+.tech-container {
+    text-align: center;
+    text-indent: 0;
+    height: 300px;
+    background-color: #f4f4f4;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* PROJECTS */
+.descriptions {
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
     line-height: 29px;
     color: black;
-    margin: 30px 5%;
-    height: 232px;
-    text-indent: 2%;
+    height: 40px;
+    margin-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 0%;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.project-container {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-content: center;
+    align-content: center;
+}
+
+.images {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-name {
+    display: flex;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgba(253, 142, 73, 0.6);
+    color: white;
+
+}
+
+.overlay:hover {
+    display: none;
+}
+
+.tag-wrapper {
+    display: flex;
+    margin-left: 5%;
+  }
+
+.tag-wrapper p {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: bold;
+    height: 15px;
+    background-color: #7ff083ff;
+    text-align: center;
+    font-size: 12px; 
+    line-height: 12px;
+    padding: 4px;
+    margin: 3px;
+    border-radius: 2px;
+    white-space: none;
+}
+.project-weatherapp, .project-chatbotapp, .project-future{
+    padding-top: 30px;
 }
 
 @media (min-width:541px) {
+
 .main__header {
     background-image: url("Images/portfolioBackground-desktop.png");
     position: relative;
@@ -126,15 +257,63 @@ p {
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    line-height: 36px;
-    margin: 50px 10%;
-    height: 230px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 35px;
     text-indent: 5%;
 }
 
+h2 {
+    font-size: 24px;
+    line-height: 30px;
 }
+
+h3 {
+    margin-left: 0px;
+}
+
+.summary-container {
+    height: 200px;
+}
+
+.tech-container {
+    height: 280px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.descriptions {
+    padding: 0px;
+    margin: 0px; 
+    padding-bottom: 20px;
+}
+
+.tag-wrapper {
+    display: flex;
+    margin-left: 0px;
+    padding-left: 0px;
+    
+}
+
+.project-weatherapp {
+    padding-top: 0px;
+} 
+
+.project-chatbotapp, .project-future{
+    padding-top: 0px;
+}
+}
+
 
 @media (min-width:1025px) {
 .main__header {
@@ -178,12 +357,27 @@ p {
 p {
     font-size: 30px;
     line-height: 50px;
-    color: black;
-    margin: 100px 15%;
-    height: 200px;
+    padding: 50px 15%;
     text-indent: 5%;
 }
 
+.summary-container {
+    height: 340px;
 }
 
+h2 {
+    font-size: 48px;
+    line-height: 50px;
+}
 
+.tech-container {
+    height: 340px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.descriptions {
+    font-size: 25px;
+    line-height: 41px;
+}
+}
